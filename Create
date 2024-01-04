@@ -1,0 +1,25 @@
+          const mongoose = require('mongoose');
+
+          // MongoDB connection URL
+          const mongoURL = 'mongodb://0.0.0.0:27017/name_of_your_database';
+          
+          // Connect to MongoDB
+          mongoose.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true })
+           .then(() => {
+            console.log('Connected to MongoDB');
+            // Start your application logic here
+
+            //Defining a schema with an example 
+            const blogSchema= new mongoose.Schema({
+              title:String,
+              content: String
+            });
+
+            //Defining a model with an example
+            const Blog= mongoose.model("Blog",blogSchema);
+
+            })
+            .catch((error) => {
+              console.error('Error connecting to MongoDB:', error);
+            });
+      
