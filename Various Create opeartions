@@ -1,0 +1,18 @@
+//Various Create Operations
+
+ 
+        //After creating schema and the model this is how you will be inserting data inside your database 
+        const name= new model_name({
+          field : value //Normal data
+        });
+        name.save();
+
+        //Performing insertMany()
+        model_name.insertMany([parameter, parameter])
+        .then(function(){
+          console.log("success");
+        });
+        .catch(function(err){
+          console.log(err);
+        });
+      
