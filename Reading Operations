@@ -1,0 +1,24 @@
+//Various reading operations
+
+        //.find() - For function reading and displaying all data present in the collection.
+        
+        model_name.find()
+          .then(function(name_of_collection){
+            console.log(fruit);
+          });
+          .catch(function(err){
+            console.log(err);
+          });
+
+        //The given data from MongoDB is a type of Array in JavaScript. We can access its individual elements like we do in JavaScript.
+        
+        model_name.find()
+          .then(function(collection_name){
+            collection_name.forEach(function(name){
+              console.log(name.field_name));
+            });
+          })
+          .catch(function (err){
+            console.log(err);
+          });
+      
