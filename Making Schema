@@ -1,3 +1,4 @@
+          //Connecting mongoose and making schema and model
           const mongoose = require('mongoose');
 
           // MongoDB connection URL
