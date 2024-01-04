@@ -1,0 +1,13 @@
+//Vaious update operations 
+
+           model_name.updateOne({Parameter1}, {Parameter2})
+        
+          //Parameter1: Where you want to update, specify the unique thing. For example: {_id: "abcd"}
+          //Parameter2: What you want to update. For example: {name: "peach"}
+
+          .then(function(){
+            console.log('Success');
+          });
+          .catch(function(err){
+            console.log(err);
+          });
