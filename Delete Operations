@@ -1,0 +1,28 @@
+//Various Delete Oerations
+
+        //deleteOne()
+
+        await model_name.deleteOne({field_name:"data to be deleted"});
+        //Make sure you have proper identification
+
+        //You can also use 
+        model_name.deleteOne({field_name:"data to be deleted"})
+          .then(function(){
+            console.log("Deleted");
+          });
+          .catch(function(err){
+            console.log(err);
+          });
+
+        //deleteMany()
+
+        await model_name.deleteMany({field_name:"data to be deleted"});
+
+        //You can also use 
+        model_name.deleteOne({field_name:"data to be deleted"})
+          .then(function(){
+            console.log("Deleted");
+          });
+          .catch(function(err){
+            console.log(err);
+          });
